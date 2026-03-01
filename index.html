@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salón Krásy Petra | Kaderníctvo & Kozmetika</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="scissors" class="w-8 h-8 text-rose-500"></i>
+                    <span class="text-2xl font-semibold text-stone-900">Salón Krásy Petra</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#sluzby" class="text-stone-600 hover:text-rose-500 transition">Služby</a>
+                    <a href="#cennik" class="text-stone-600 hover:text-rose-500 transition">Cenník</a>
+                    <a href="#galeria" class="text-stone-600 hover:text-rose-500 transition">Galéria</a>
+                    <a href="#kontakt" class="text-stone-600 hover:text-rose-500 transition">Kontakt</a>
+                </div>
+                <a href="#rezervacia" class="bg-rose-500 text-white px-6 py-3 rounded-full font-medium hover:bg-rose-600 transition shadow-lg shadow-rose-500/30">
+                    Rezervovať termín
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-rose-50 via-stone-50 to-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-rose-500 font-medium tracking-wider uppercase text-sm">Váš salón krásy v Bratislave</span>
+                    <h1 class="text-5xl lg:text-6xl font-bold text-stone-900 mt-4 mb-6 leading-tight">
+                        Objavte svoju <span class="text-rose-500">prirodzenú krásu</span>
+                    </h1>
+                    <p class="text-xl text-stone-600 mb-8 leading-relaxed">
+                        Profesionálne kadernícke a kozmetické služby s 15-ročnou tradíciou. 
+                        Nechajte sa rozmaznávať v príjemnom prostredí nášho salónu.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#rezervacia" class="bg-rose-500 text-white px-8 py-4 rounded-full font-medium hover:bg-rose-600 transition shadow-lg shadow-rose-500/30 flex items-center gap-2">
+                            <i data-lucide="calendar" class="w-5 h-5"></i>
+                            Online rezervácia
+                        </a>
+                        <a href="#cennik" class="border-2 border-stone-300 text-stone-700 px-8 py-4 rounded-full font-medium hover:border-rose-500 hover:text-rose-500 transition">
+                            Pozrieť cenník
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-8 mt-12">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-stone-900">15+</div>
+                            <div class="text-sm text-stone-500">rokov skúseností</div>
+                        </div>
+                        <div class="w-px h-12 bg-stone-300"></div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-stone-900">5000+</div>
+                            <div class="text-sm text-stone-500">spokojných klientov</div>
+                        </div>
+                        <div class="w-px h-12 bg-stone-300"></div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-stone-900">4.9</div>
+                            <div class="text-sm text-stone-500">hodnotenie ⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-rose-200 rounded-3xl transform rotate-3"></div>
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop" alt="Salón krásy" class="relative rounded-3xl shadow-2xl w-full object-cover h-[500px]">
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center">
+                                <i data-lucide="award" class="w-6 h-6 text-rose-500"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-stone-900">Certifikovaný salón</div>
+                                <div class="text-sm text-stone-500">L'Oréal Professionnel</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="sluzby" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-rose-500 font-medium tracking-wider uppercase text-sm">Naše služby</span>
+                <h2 class="text-4xl font-bold text-stone-900 mt-3">Kompletná starostlivosť o vašu krásu</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group p-8 bg-stone-50 rounded-2xl hover:bg-rose-50 transition duration-300">
+                    <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-rose-200 transition">
+                        <i data-lucide="scissors" class="w-8 h-8 text-rose-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-stone-900 mb-3">Kaderníctvo</h3>
+                    <p class="text-stone-600">Strihy, farbenie, melír, ombre a kompletná úprava vlasov pre dámy aj pánov.</p>
+                </div>
+                <div class="group p-8 bg-stone-50 rounded-2xl hover:bg-rose-50 transition duration-300">
+                    <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-rose-200 transition">
+                        <i data-lucide="sparkles" class="w-8 h-8 text-rose-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-stone-900 mb-3">Kozmetika</h3>
+                    <p class="text-stone-600">Faciálne ošetrenia, čistenie pleti, anti-aging procedúry a líčenie.</p>
+                </div>
+                <div class="group p-8 bg-stone-50 rounded-2xl hover:bg-rose-50 transition duration-300">
+                    <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-rose-200 transition">
+                        <i data-lucide="hand" class="w-8 h-8 text-rose-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-stone-900 mb-3">Manikúra</h3>
+                    <p class="text-stone-600">Klasická a gélová manikúra, japonská manikúra, nail art a parafínové zábaly.</p>
+                </div>
+                <div class="group p-8 bg-stone-50 rounded-2xl hover:bg-rose-50 transition duration-300">
+                    <div class="w-16 h-16 bg-rose-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-rose-200 transition">
+                        <i data-lucide="footprints" class="w-8 h-8 text-rose-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-stone-900 mb-3">Pedikúra</h3>
+                    <p class="text-stone-600">Medicinálna a kozmetická pedikúra, gélové nechty na nohách, masáže chodidiel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="cennik" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-rose-500 font-medium tracking-wider uppercase text-sm">Cenník</span>
+                <h2 class="text-4xl font-bold text-stone-900 mt-3">Transparentné ceny našich služieb</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Hair Services -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="scissors" class="w-6 h-6 text-rose-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stone-900">Kaderníctvo</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Dámsky strih</span>
+                            <span class="font-semibold text-stone-900">od 25 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Pánsky strih</span>
+                            <span class="font-semibold text-stone-900">od 15 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Farbenie vlasov</span>
+                            <span class="font-semibold text-stone-900">od 45 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Melír</span>
+                            <span class="font-semibold text-stone-900">od 55 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Ombre/Balayage</span>
+                            <span class="font-semibold text-stone-900">od 75 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Kérastase kúra</span>
+                            <span class="font-semibold text-stone-900">od 35 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cosmetic Services -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="sparkles" class="w-6 h-6 text-rose-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stone-900">Kozmetika</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Klasické ošetrenie</span>
+                            <span class="font-semibold text-stone-900">od 35 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Hĺbkové čistenie</span>
+                            <span class="font-semibold text-stone-900">od 55 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Anti-aging kúra</span>
+                            <span class="font-semibold text-stone-900">od 65 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Úprava obočia</span>
+                            <span class="font-semibold text-stone-900">od 8 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Laminácia obočia</span>
+                            <span class="font-semibold text-stone-900">od 35 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Líčenie</span>
+                            <span class="font-semibold text-stone-900">od 45 €</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Nails Services -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center">
+                            <i data-lucide="hand" class="w-6 h-6 text-rose-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-stone-900">Nechty</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Klasická manikúra</span>
+                            <span class="font-semibold text-stone-900">od 15 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Gélové nechty</span>
+                            <span class="font-semibold text-stone-900">od 35 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Doplnenie gélu</span>
+                            <span class="font-semibold text-stone-900">od 30 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Klasická pedikúra</span>
+                            <span class="font-semibold text-stone-900">od 20 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Medicinálna pedikúra</span>
+                            <span class="font-semibold text-stone-900">od 35 €</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="text-stone-600">Nail art (1 necht)</span>
+                            <span class="font-semibold text-stone-900">od 3 €</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-rose-500 font-medium tracking-wider uppercase text-sm">Galéria</span>
+                <h2 class="text-4xl font-bold text-stone-900 mt-3">Naše práce hovoria za nás</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop" alt="Účes" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Dámsky strih s melírom</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?w=600&h=400&fit=crop" alt="Manikúra" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Gélová manikúra</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&h=400&fit=crop" alt="Salón" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Interiér salónu</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=400&fit=crop" alt="Líčenie" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Večerné líčenie</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Pánsky strih" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Pánsky strih</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&h=400&fit=crop" alt="Nechty" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+                        <span class="text-white font-medium">Nail art dizajn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="rezervacia" class="py-20 bg-rose-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-rose-100 font-medium tracking-wider uppercase text-sm">Online rezervácia</span>
+                <h2 class="text-4xl font-bold text-white mt-3">Rezervujte si termín online</h2>
+                <p class="text-rose-100 mt-4 text-lg">Vyberte službu, dátum a čas. My sa vám ozveme s potvrdením.</p>
+            </div>
+            <form class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-stone-700 font-medium mb-2">Meno a priezvisko</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 outline-none transition" placeholder="Zadajte vaše meno">
+                    </div>
+                    <div>
+                        <label class="block text-stone-700 font-medium mb-2">Telefón</label>
+                        <input type="tel" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 outline-none transition" placeholder="+421 XXX XXX XXX">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-stone-700 font-medium mb-2">Email</label>
+                    <input type="email" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 outline-none transition" placeholder="vas@email.sk">
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <label class="block text-stone-700 font-medium mb-2">Služba</label>
+                        <select class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 outline-none transition">
+                            <option>Vyberte službu</option>
+                            <option>Dámsky strih</option>
+                            <option>Pánsky strih</option>
+                            <option>Farbenie vlasov</option>
+                            <option>Melír</option>
+                            <option>Gélová manikúra</option>
+                            <option>Kozmetické ošetrenie</option>
+                            <option>Manikúra + Pedikúra</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-stone-700 font-medium mb-2">Preferovaný dátum</label>
+                        <input type="date" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 outline-none transition">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block text-stone-700 font-medium mb-2">Preferovaný čas</label>
+                    <div class="grid grid-cols-4 md:grid-cols-6 gap-3">
+                        <button type="button" class="py-2 px-4 rounded-lg border border-stone-200 hover:border-rose-500 hover:bg-rose-50 transition text-sm">9:00</button>
+                        <button type="button" class="py-2 px-4 rounded-lg border border-stone-200 hover:border-rose-500 hover:bg-rose-50 transition text-sm">10:00</button>
+                        <button type="button" class="py-2 px-4 rounded-lg border border-stone-200 hover:border-rose-500 hover:bg-rose-50 transition text-sm">11:00</button>
+                        <button type="button" class="py-2 px-4 rounded-lg border border-stone-200 hover:border-rose-500 hover:bg-rose-50 transition text-sm">13:00</button>
+                        <button type="button" class="py-2 px-4 rounded-lg border border-stone-200 hover:border-rose-500 hover:bg-rose-50 transition text-sm">14:00</button>
+                        <button type="button" class="py-2 px-4 rounded-lg border border-stone-200 hover:border-rose-500 hover:bg-rose-50 transition text-sm">15:00</button>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <label class="block text-stone-700 font-medium mb-2">Poznámka</label>
+                    <textarea rows="3" class="w-full px-4 py-3 rounded-xl border border-stone-200 focus:border-rose-500 focus:ring-2 focus:ring-rose-200 outline-none transition" placeholder="Máte špeciálne požiadavky?"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-rose-500 text-white py-4 rounded-xl font-semibold text-lg hover:bg-rose-600 transition shadow-lg shadow-rose-500/30">
+                    Odoslať rezerváciu
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-20 bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i data-lucide="scissors" class="w-8 h-8 text-rose-500"></i>
+                        <span class="text-2xl font-semibold">Salón Krásy Petra</span>
+                    </div>
+                    <p class="text-stone-400 mb-6">Váš partner v starostlivosti o krásu už od roku 2009. Profesionálne služby v príjemnom prostredí.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center hover:bg-rose-500 transition">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-stone-800 rounded-full flex items-center justify-center hover:bg-rose-500 transition">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Kontakt</h4>
+                    <ul class="space-y-4 text-stone-400">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-rose-500 flex-shrink-0 mt-0.5"></i>
+                            <span>Hlavná ulica 123<br>811 01 Bratislava</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-rose-500 flex-shrink-0"></i>
+                            <span>+421 901 234 567</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-rose-500 flex-shrink-0"></i>
+                            <span>info@salonpetra.sk</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Otváracie hodiny</h4>
+                    <ul class="space-y-2 text-stone-400">
+                        <li class="flex justify-between">
+                            <span>Pondelok - Piatok</span>
+                            <span>9:00 - 19:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sobota</span>
+                            <span>9:00 - 14:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Nedeľa</span>
+                            <span class="text-rose-500">Zatvorené</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Rýchle odkazy</h4>
+                    <ul class="space-y-2 text-stone-400">
+                        <li><a href="#sluzby" class="hover:text-rose-500 transition">Služby</a></li>
+                        <li><a href="#cennik" class="hover:text-rose-500 transition">Cenník</a></li>
+                        <li><a href="#rezervacia" class="hover:text-rose-500 transition">Rezervácia</a></li>
+                        <li><a href="#" class="hover:text-rose-500 transition">Darčekové poukážky</a></li>
+                        <li><a href="#" class="hover:text-rose-500 transition">Kariéra</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-stone-800 mt-12 pt-8 text-center text-stone-500">
+                <p>&copy; 2024 Salón Krásy Petra. Všetky práva vyhradené.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
